@@ -39,4 +39,3 @@ require('includes/security.php');
     </div>
   </body>
 </html>
-
