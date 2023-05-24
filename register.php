@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<<<<<<< HEAD
 <html>
   <head>
     <title>Study Buddy - Register</title>
@@ -52,6 +53,56 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <footer>
       <p>&copy; 2021 Study Buddy</p>
     </footer>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Buddy - Register</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Study Buddy</h1>
+        <nav>
+          <a href="index.php">Home</a>
+          <a href="faq.php">FAQ</a>
+          <a href="register.php">Register</a>
+          <a href="login.php">Login</a>
+        </nav>
+      </header>
+      <main>
+        <div class="hero-image">
+          <img src="images/register.jpg" alt="Register Banner">
+        </div>
+        <section class="registration-form">
+          <h2>Join Study Buddy Today!</h2>
+          <p>Get access to a world of knowledge and meet your perfect study partner.</p>
+          <form action="register.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <br>
+            <button type="submit">Join Now</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Study Buddy</p>
+      </footer>
+    </div>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/39796811.js"></script>
+    <!-- End of HubSpot Embed Code -->
+>>>>>>> 09d0a23 (Initial commit)
   </body>
 </html>
 

@@ -1,7 +1,10 @@
 <?php
 session_start();
 require('includes/dbconnection.php');
+<<<<<<< HEAD
 require('includes/security.php');
+=======
+>>>>>>> 09d0a23 (Initial commit)
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $username = $_POST['username'];
@@ -35,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <html>
 <head>
+<<<<<<< HEAD
   <title>Study Buddy - Login</title>
 </head>
 <body>
@@ -52,3 +56,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 </html>
 
+=======
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PYEBLTVME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1PYEBLTVME');
+</script>
+
+  <title>Study Buddy - Login</title>
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+</head>
+<body>
+    <?php include 'header.php'; ?>
+    
+    <main>
+      <div class="container">
+        <div class="card">
+          <img src="images/login.jpg" alt="Login">
+          </div>
+          <h2>Login</h2>
+          <p>Access all the features of Study Buddy by logging into your account. Don't have an account? Register now!</p>
+        <form action="login.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </main>
+    
+    <?php include 'footer.php'; ?>
+  </body>
+</html>
+>>>>>>> 09d0a23 (Initial commit)
