@@ -33,7 +33,7 @@
         </div>
         <section>
           <h2>We'd Love to Hear From You!</h2>
-          <p>Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
+          <p>Whether you have a question about features, need a demo, or provide feedback our team is ready to answer all your questions.</p>
         </section>
         <section>
         <div class="card">

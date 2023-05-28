@@ -1,10 +1,6 @@
 <?php
 session_start();
 require('includes/dbconnection.php');
-<<<<<<< HEAD
-require('includes/security.php');
-=======
->>>>>>> 09d0a23 (Initial commit)
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $username = $_POST['username'];
@@ -22,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (password_verify($password, $user['Password'])) {
       $_SESSION['username'] = $username;
       $_SESSION['Auth'] = $user['Auth'];
+      $_SESSION['ID'] = $user['ID']; // Assuming the column name in the users table is 'ID'
 
       header('Location: members.php');
       exit();
@@ -38,25 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <html>
 <head>
-<<<<<<< HEAD
-  <title>Study Buddy - Login</title>
-</head>
-<body>
-  <h1>Login to Study Buddy</h1>
-  <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
-  <form method="post" action="login.php">
-    <label>Username:</label>
-    <input type="text" name="username" required><br>
-
-    <label>Password:</label>
-    <input type="password" name="password" required><br>
-
-    <input type="submit" value="Login">
-  </form>
-</body>
-</html>
-
-=======
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PYEBLTVME"></script>
@@ -67,13 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   gtag('config', 'G-1PYEBLTVME');
 </script>
-
   <title>Study Buddy - Login</title>
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
-    
+<?php 
+include 'header.php'; 
+?>
     <main>
       <div class="container">
         <div class="card">
@@ -90,8 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
       </div>
     </main>
-    
     <?php include 'footer.php'; ?>
   </body>
 </html>
->>>>>>> 09d0a23 (Initial commit)
