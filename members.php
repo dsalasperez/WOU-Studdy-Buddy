@@ -1,9 +1,6 @@
 <?php
 session_start();
 require('includes/security.php');
-<<<<<<< HEAD
-?> 
-=======
 require('includes/dbconnection.php');
 
 if (isset($_GET['search'])) {
@@ -18,41 +15,14 @@ if (isset($_GET['search'])) {
 ?>
 
 <?php include 'header.php'; ?>
->>>>>>> dev
 
 <!DOCTYPE html>
 <html>
   <head>
-<<<<<<< HEAD
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PYEBLTVME"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1PYEBLTVME');
-</script>
-
-=======
->>>>>>> dev
     <title>Study Buddy - Members</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   </head>
   <body>
-<<<<<<< HEAD
-    <div class="container">    
-      <header>
-         <h1>Welcome <?php echo $_SESSION['username']; ?> to Study Buddy!</h1>
-        <nav>
-          <a href="faq.php">FAQ</a>
-          <a href="news.php">News</a>
-          <a href="notes.php">Notes</a>
-          <a href="logout.php">Logout</a>
-        </nav>
-      </header>
-=======
     <h1>Members</h1>
 
     <form method="get" action="members.php">
@@ -72,16 +42,11 @@ if (isset($_GET['search'])) {
     <?php endif; ?>
 
     <div class="container">
->>>>>>> dev
       <main>
         <div class="card">
           <img src="images/wou.jpg" alt="Image of Western Oregon University Front">
           <h2>Resources and News</h2>
-<<<<<<< HEAD
-          <p>There is many resources available for you.</p>
-=======
           <p>There are many resources available for you.</p>
->>>>>>> dev
         </div>
         <div class="card">
           <img src="images/notes.jpg" alt="Image of notes">
@@ -89,22 +54,6 @@ if (isset($_GET['search'])) {
           <p>Access your <a href="notes.php">notes</a> and save them for later use.</p>
         </div>
         <div class="card">
-<<<<<<< HEAD
-          <img src="images/welcome.jpg" alt="Image of library books"> 
-          
-          <h2>Access or Create Study Groups!</h2>
-          <p>Are you looking for a study group revelant to your classes or major? Would you like to create a study session with your friends or classmates?.</p>
-          <p>If so click <a href="https://classroom.google.com/u/1/" target="_blank">to login to your Classroom</a>
-        </div>
-      </main>
-      <footer>
-        <p>&copy; 2023 Study Buddy</p>
-      </footer>
-    </div>
-  </body>
-</html>
-
-=======
           <img src="images/welcome.jpg" alt="Image of library books">
           <h2>Access or Create Study Groups!</h2>
           <p>Are you looking for a study group relevant to your classes or major? Would you like to create a study session with your friends or classmates?</p>
@@ -116,4 +65,3 @@ if (isset($_GET['search'])) {
     <?php include 'footer.php'; ?>
   </body>
 </html>
->>>>>>> dev
