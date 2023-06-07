@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<?php
+session_start();
+require('includes/security.php');
+?>
+<?php
+include 'header.php';
+?>
+
+>>>>>>> dev
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,6 +29,7 @@
   
   <body>
     <div class="container">
+<<<<<<< HEAD
       <header>
         <h1>Study Buddy</h1>
         <nav>
@@ -34,6 +46,23 @@
         </div>
           <h2>Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.</h2>
 
+=======
+      <main>
+        <div class="card img">
+        <?php if($authenticated) { ?>
+            <img src="images/member_contact.jpg" alt="Contact Us Banner">
+            <h2>Dear member, we're here to help you!</h2>
+        <?php } else { ?>
+            <img src="images/contactus.jpg" alt="Contact Us Banner">
+            <h2>We'd Love to Hear From You!</h2>
+        <?php } ?>
+        </div>
+        <?php if($authenticated) { ?>
+            <h2>Got a question about a feature or need help with something? Our team is ready to assist you.</h2>
+        <?php } else { ?>
+            <h2>Whether you have a question about features, need a demo, or have a feedback, our team is ready to answer all your questions.</h2>
+        <?php } ?>
+>>>>>>> dev
         <div class="card">
           <img src="images/email.jpg" alt="Email">
           <h2>Email Us</h2>
@@ -50,9 +79,12 @@
           <p>Prefer snail mail? Send your letters to: Study Buddy Inc., 123 Street Name, City, State, 12345</p>
         </div>
       </main>
+<<<<<<< HEAD
       <footer>
         <p>&copy; 2023 Study Buddy</p>
       </footer>
+=======
+>>>>>>> dev
     </div>
  <!-- HubSpot Form Embed Code -->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
@@ -67,6 +99,12 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/39796811.js"></script>
     <!-- End of HubSpot Embed Code -->
+<<<<<<< HEAD
+=======
+<?php
+include 'footer.php';
+?>
+>>>>>>> dev
   </body>
 </html>
 

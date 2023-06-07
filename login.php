@@ -18,6 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (password_verify($password, $user['Password'])) {
       $_SESSION['username'] = $username;
       $_SESSION['Auth'] = $user['Auth'];
+<<<<<<< HEAD
+=======
+      $_SESSION['ID'] = $user['ID']; // Assuming the column name in the users table is 'ID'
+>>>>>>> dev
 
       header('Location: members.php');
       exit();
@@ -44,13 +48,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   gtag('config', 'G-1PYEBLTVME');
 </script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
   <title>Study Buddy - Login</title>
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 <body>
+<<<<<<< HEAD
     <?php include 'header.php'; ?>
     
+=======
+<?php 
+include 'header.php'; 
+?>
+>>>>>>> dev
     <main>
       <div class="container">
         <div class="card">
@@ -67,7 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
       </div>
     </main>
+<<<<<<< HEAD
     
+=======
+>>>>>>> dev
     <?php include 'footer.php'; ?>
   </body>
 </html>

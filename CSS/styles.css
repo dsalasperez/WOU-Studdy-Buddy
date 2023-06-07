@@ -2,18 +2,18 @@
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Use min-height instead of height to ensure container always fills at least the full screen height, but can grow taller if needed */
+  min-height: 100vh;
 }
 
 /* Define a header with a fixed height */
 header {
-  height: 10vh; /* Use viewport units for height to make it responsive */
+  height: 10vh;
   background-color: #333;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2vw; /* Use viewport units for padding to make it responsive */
+  padding: 0 2vw;
 }
 
 /* Define a main content area that grows to fill the available space */
@@ -23,12 +23,12 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 2vh 2vw; /* Use viewport units for padding to make it responsive */
+  padding: 2vh 2vw;
 }
 
 /* Define a footer with a fixed height */
 footer {
-  height: 5vh; /* Use viewport units for height to make it responsive */
+  height: 5vh;
   background-color: #333;
   color: white;
   display: flex;
@@ -40,14 +40,14 @@ footer {
 header a {
   color: white;
   text-decoration: none;
-  margin-right: 2vw; /* Use viewport units for margin to make it responsive */
+  margin-right: 2vw;
 }
 
 /* Style cards in the main content area */
 .card {
-  width: 80vw; /* Start with a large width on small screens */
-  max-width: 300px; /* But don't let the width exceed 300px on large screens */
-  margin: 2vh 2vw; /* Use viewport units for margin to make it responsive */
+  width: 80vw;
+  max-width: 300px;
+  margin: 2vh 2vw;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -59,13 +59,13 @@ header a {
 /* Adjust the card layout for larger screens */
 @media (min-width: 600px) {
   .card {
-    width: calc(50% - 4vw); /* Two cards per row, accounting for margin */
+    width: calc(50% - 4vw);
   }
 }
 
 @media (min-width: 900px) {
   .card {
-    width: calc(33.3333% - 4vw); /* Three cards per row, accounting for margin */
+    width: calc(33.3333% - 4vw);
   }
 }
 
@@ -76,14 +76,13 @@ header a {
 }
 
 .card h2 {
-  margin: 2vh 2vw; /* Use viewport units for margin to make it responsive */
+  margin: 2vh 2vw;
   font-size: 24px;
   font-weight: bold;
 }
 
 .card p {
-  margin: 0 2vw 2vh; /* Use viewport units for margin to make it responsive */
+  margin: 0 2vw 2vh;
   font-size: 16px;
   line-height: 1.5;
 }
-
