@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 session_start();
 require('includes/security.php');
@@ -8,7 +6,6 @@ require('includes/security.php');
 include 'header.php';
 ?>
 
->>>>>>> dev
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,24 +26,6 @@ include 'header.php';
   
   <body>
     <div class="container">
-<<<<<<< HEAD
-      <header>
-        <h1>Study Buddy</h1>
-        <nav>
-          <a href="index.php">Home</a>
-          <a href="faq.php">FAQ</a>
-          <a href="register.php">Register</a>
-          <a href="login.php">Login</a>
-        </nav>
-      </header>
-      <main>
-        <div class="card img"">
-          <img src="images/contactus.jpg" alt="Contact Us Banner">
-          <h2>We'd Love to Hear From You!</h2>
-        </div>
-          <h2>Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.</h2>
-
-=======
       <main>
         <div class="card img">
         <?php if($authenticated) { ?>
@@ -62,7 +41,6 @@ include 'header.php';
         <?php } else { ?>
             <h2>Whether you have a question about features, need a demo, or have a feedback, our team is ready to answer all your questions.</h2>
         <?php } ?>
->>>>>>> dev
         <div class="card">
           <img src="images/email.jpg" alt="Email">
           <h2>Email Us</h2>
@@ -79,12 +57,6 @@ include 'header.php';
           <p>Prefer snail mail? Send your letters to: Study Buddy Inc., 123 Street Name, City, State, 12345</p>
         </div>
       </main>
-<<<<<<< HEAD
-      <footer>
-        <p>&copy; 2023 Study Buddy</p>
-      </footer>
-=======
->>>>>>> dev
     </div>
  <!-- HubSpot Form Embed Code -->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
@@ -99,12 +71,9 @@ include 'header.php';
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/39796811.js"></script>
     <!-- End of HubSpot Embed Code -->
-<<<<<<< HEAD
-=======
 <?php
 include 'footer.php';
 ?>
->>>>>>> dev
   </body>
 </html>
 

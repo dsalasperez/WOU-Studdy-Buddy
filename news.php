@@ -1,10 +1,6 @@
 <?php
-<<<<<<< HEAD
-include 'security.php';
-=======
 session_start();
 require('includes/security.php');
->>>>>>> dev
 include 'header.php';
 ?>
 
@@ -37,12 +33,6 @@ include 'header.php';
           <p>Many cloud storage providers offer free storage plans that can be used to back up and access files from anywhere. These can be especially helpful for students, who often need to save and share large files for their assignments.</p>
         </div>
       </main>
-<<<<<<< HEAD
-      <footer>
-        <p>&copy; 2023 Study Buddy</p>
-      </footer>
-=======
->>>>>>> dev
     </div>
   </body>
 </html>
