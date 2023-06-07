@@ -1,8 +1,6 @@
 <?php
 session_start();
 require('includes/security.php');
-?>
-<?php
 include 'header.php';
 ?>
 

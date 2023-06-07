@@ -29,11 +29,7 @@ if (!$user || !password_verify($_POST['password'], $user['Password'])) {
 // Set session variables and redirect to authenticated.php
 $_SESSION['Auth'] = $user['Auth'];
 $_SESSION['username'] = $user['UserName'];
-<<<<<<< HEAD
-header('Location: authenticated.php');
-=======
 header('Location: members.php');
->>>>>>> 09d0a23 (Initial commit)
 exit();
 
 $conn->close();

@@ -46,7 +46,6 @@ include 'header.php';
 <body>
   <h1>Notes</h1>
   <form method="post" action="notes.php">
-    <label>Notes:</label><br>
     <textarea name="note" rows="10" cols="50"></textarea><br>
     <input type="submit" value="Save">
   </form>
