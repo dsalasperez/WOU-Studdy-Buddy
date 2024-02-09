@@ -1,4 +1,6 @@
 <?php
+
+# To improve security include credential information using environment variables
 $servername = "localhost";
 $username = "dev";
 $password = "yUyUq@rU9iwuXi59_RIC";
